@@ -23,12 +23,15 @@ const listaSpesa = ['carote', 'biscotti', 'nuetella', 'banane', 'pasta'];
 
 // -----------------------------------------------------------------------------------------------
 
+
+
 // Stampo in pagina gli elemnti della lista indivisualemnet con il ciclo while
 
 
 let c = 0;
 let spesa = 0;
 
+// il ciclo while mi permette di stampare in pagina tutti gli elementi del mio array
 while (c < listaSpesa.length) {
     const li = document.createElement("li");
     let spesa = listaSpesa[c];
