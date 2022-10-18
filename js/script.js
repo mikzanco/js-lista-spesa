@@ -8,3 +8,12 @@
 const listaSpesa = ['carote', 'biscotti', 'nuetella', 'banane', 'pasta',];
 
 console.log(listaSpesa);
+const li = document.createElement("li");
+
+
+
+
+
+li.innerHTML = listaSpesa;
+
+document.body.append(li);
