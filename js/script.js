@@ -5,15 +5,32 @@
 
 
 
-const listaSpesa = ['carote', 'biscotti', 'nuetella', 'banane', 'pasta',];
+const listaSpesa = ['carote', 'biscotti', 'nuetella', 'banane', 'pasta'];
 
-console.log(listaSpesa);
+// console.log(listaSpesa);
 const li = document.createElement("li");
 
+for (let i = 0; i < listaSpesa.length; i++) {
+    let spesa = listaSpesa[i];
+    console.log(spesa);
+    li.innerHTML = spesa;
+}
+
+
+// let c = 0;
+// let spesa = 0;
+
+// while (c < listaSpesa.length) {
+//     let spesa = listaSpesa[c];
+//     spesa = 
+//     c++;
+
+// }
 
 
 
-
-li.innerHTML = listaSpesa;
 
 document.body.append(li);
+
+
+
