@@ -10,24 +10,35 @@ const listaSpesa = ['carote', 'biscotti', 'nuetella', 'banane', 'pasta'];
 // console.log(listaSpesa);
 
 // creatElement e append vanno inseiriti nel ciclo perchè questo crei un li per ogni elemento dell'array
-for (let i = 0; i < listaSpesa.length; i++) {
+
+// Stampo in pagina gli elemnti della lista indivisualemnet con il ciclo for
+
+// for (let i = 0; i < listaSpesa.length; i++) {
+//     const li = document.createElement("li");
+//     let spesa = listaSpesa[i];
+//     console.log(spesa);
+//     li.innerHTML = spesa;
+//     document.body.append(li);
+// }
+
+// -----------------------------------------------------------------------------------------------
+
+// Stampo in pagina gli elemnti della lista indivisualemnet con il ciclo while
+
+
+let c = 0;
+let spesa = 0;
+
+while (c < listaSpesa.length) {
     const li = document.createElement("li");
-    let spesa = listaSpesa[i];
+    let spesa = listaSpesa[c];
     console.log(spesa);
     li.innerHTML = spesa;
+    
+    c++;
     document.body.append(li);
+
 }
-
-
-// let c = 0;
-// let spesa = 0;
-
-// while (c < listaSpesa.length) {
-//     let spesa = listaSpesa[c];
-//     spesa = 
-//     c++;
-
-// }
 
 
 
