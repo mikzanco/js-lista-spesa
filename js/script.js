@@ -8,12 +8,14 @@
 const listaSpesa = ['carote', 'biscotti', 'nuetella', 'banane', 'pasta'];
 
 // console.log(listaSpesa);
-const li = document.createElement("li");
 
+// creatElement e append vanno inseiriti nel ciclo perchè questo crei un li per ogni elemento dell'array
 for (let i = 0; i < listaSpesa.length; i++) {
+    const li = document.createElement("li");
     let spesa = listaSpesa[i];
     console.log(spesa);
     li.innerHTML = spesa;
+    document.body.append(li);
 }
 
 
@@ -30,7 +32,7 @@ for (let i = 0; i < listaSpesa.length; i++) {
 
 
 
-document.body.append(li);
+
 
 
 
